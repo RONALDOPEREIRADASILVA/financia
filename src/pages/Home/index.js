@@ -6,6 +6,8 @@ import Header from '../../components/Header'
 import Balance from '../../components/Balance';
 
 import Moviments from '../../components/Moviments';
+import Actions from '../../components/Actions';
+
 
 const list=[
   {
@@ -36,6 +38,7 @@ export default function Home() {
     
       <Header name="Ricardo"/> 
       <Balance saldo="9.643,00" gastos="-527,00"/>
+      <Actions/>
       <Text style={styles.title}>Útimas movimentaçãos</Text>
       <FlatList
       style={styles.list}
@@ -58,9 +61,7 @@ const styles = StyleSheet.create({
   title:{
     fontSize:18,
     fontWeight:'bold',
-    marginLft:14,
-    marginRight:14,
-    marginTop:14,
+    margin:14,
 
   },
   list:{
